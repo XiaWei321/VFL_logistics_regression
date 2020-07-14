@@ -5,7 +5,7 @@ from time import gmtime, strftime
 import os
 
 
-def vertical_secret_sharing_linear_regression(X, y, X_test, y_test, config):
+def vertical_secret_sharing_logistics_regression(X, y, X_test, y_test, config):
     """
     Start the processes of the three clients: A, B and C.
     :param X: features of the training dataset
@@ -65,6 +65,6 @@ if __name__ == '__main__':
     print(X.shape, y.shape, X_test.shape, y_test.shape)
 
     # perform protocol iva secret sharing only.
-    vertical_secret_sharing_linear_regression(X, y, X_test, y_test, config)
+    vertical_secret_sharing_logistics_regression(X, y, X_test, y_test, config)
 
 
